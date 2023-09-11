@@ -1,0 +1,244 @@
+        body{
+            background-color: transparent; 
+
+        }
+        .nav-container {
+            background-color: white;
+        }
+
+        .navbar {
+            height: 60px;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            backdrop-filter: blur(20px); /* This applies a blur effect to the background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow to create floating effect */
+        }
+
+        .conversation-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .chat-card {
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-input {
+            border-color: transparent;
+        }
+
+        .search-input:focus {
+            border-color: transparent;
+            box-shadow: inset 0px 0px 0px 1px transparent;
+        }
+
+        .avatar-img {
+            background-color: grey;
+            height: 55px;
+            width: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none !important;
+            color: white;
+            font-size: 22px;
+        }
+        .avatar-img2 {
+            background-color: grey;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none !important;
+            color: white;
+            font-size: 18px;
+        }
+        .message-avatar {
+            width: 45px;
+            height: 100%;
+        }
+
+        .rounded-message {
+            border-radius: 15px;
+        }
+
+        .avatar-badge {
+            border-radius: 50%;
+            height: 10px;
+            width: 10px;
+            margin-left: 2.9rem;
+            margin-top: -0.75rem;
+        }
+
+        .message-timestamp {
+            background-color: #f5f6f7;
+        }
+
+        .send-message-input {
+            width: 100%;
+        }
+        .custom-container{
+            margin-top: 7rem;
+        }
+
+        /* For Webkit-based browsers (Chrome, Safari, newer versions of Opera) */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+        
+        #displayNamePlaceholder{
+            margin-left: 50px;
+        }
+        
+        a{
+            text-decoration: none;
+        }
+        .conversation-person:hover{
+            background-color: rgba(126, 126, 126, 0.295);
+            cursor: pointer;
+        }
+        .logout-btn{
+            margin-right: 30px;
+        }
+        .header-chat{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .menu-main{
+            cursor: pointer;
+            position: relative;
+            margin-bottom: 6px;
+        }
+        .main-option{
+            outline: 1px solid rgba(126, 126, 126, 0.295);
+            height: 40px;
+            width: 115px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 9999;
+            right: 25px;
+            top: 47px;
+            background-color: white;
+            display: none;
+        }
+        .main-option:hover{
+            /* background-color: rgba(126, 126, 126, 0.295); */
+            cursor: pointer;
+            z-index: 9999;
+        }
+        .message-options{
+            border-radius: 12px;
+            width: 200px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+        .message-options li{
+            border-radius: 12px;
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid rgba(126, 126, 126, 0.295) ;
+            color: #555;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .message-options li:hover {
+            background-color: rgba(126, 126, 126, 0.295);
+        }
+        .message-text{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .text-menu{
+            cursor: pointer;
+        }
+        .back-button{
+            margin-right: 12px;
+            margin-bottom: 5px;
+        }
+        .show-on-mobile {
+            display: block;  
+        }
+        .show-on-desktop {
+            display: block;  
+        }
+        .main-conversation-list-container{
+            margin-bottom: 1.5rem;
+        }
+        .message-container{
+            padding-top: 1rem;
+            padding-right: 1rem;
+        }
+        .search-container{
+            padding: 1rem;
+        }
+        @media screen and (max-width:576px) {
+            #displayNamePlaceholder{
+                margin-left: 10px;
+                font-size: 22px;
+            } 
+            .custom-container{
+                margin: 0;
+                --bs-gutter-x: 0rem;
+            }
+            .show-on-desktop {
+                display: none;
+            }
+            .show-on-mobile{
+                display: none;
+            }
+            .custom-card{
+                padding: 0;
+            }
+            .navbar{
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            .main-conversation-list-container{
+                margin-bottom: 0rem;
+            }
+            .message-container{
+                padding-left: 1rem;
+                padding-top: 0rem !important;
+            }
+            .search-container{
+                padding: 0;
+            }
+        }
+        @media screen and (max-width:320px) {
+            #displayNamePlaceholder{
+                margin-left: 10px;
+                font-size: 18px;
+            }
+        }
+    
+        
+          
+
+          

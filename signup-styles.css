@@ -1,0 +1,89 @@
+body {
+    background-image: url(./images/elevated-view-breads-utensils-egg-spices-forming-frame-black-background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    /* background-color: rgba(255, 255, 255, 0.15); */
+    
+}
+
+.glass-container {
+    width: 450px;
+    height: 640px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem 1.5rem;
+}
+
+.content {
+    text-align: center;
+    font-size: 28px;
+    color: chocolate;
+    margin-bottom: 1rem; 
+}
+
+.form-label {
+    color: white;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* padding: 0.7rem 0rem; */
+}
+.form-label::after{
+    content: "*";
+    color: chocolate;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    outline: 2px solid chocolate; 
+}
+
+.btn-submit{
+    background-color: chocolate ;
+    color: white;
+    --bs-btn-padding-x: 1.75rem;
+
+}
+.btn-submit:hover{
+   outline: 2px solid white;   
+   /* background-color: chocolate ; */
+   color: white;
+}
+
+.have-acc{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+.login-here{
+    margin-left: 8px;
+    color: chocolate;
+}
+.error {
+    color: chocolate;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:576px){
+    .glass-container{
+        margin: 0rem 2rem;
+    }
+}

@@ -1,0 +1,173 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.custom-container {
+    height: 100%;
+    padding: 0;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-custom{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+.form-custom {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Optional: Add some extra spacing between form elements */
+.form-custom .form-group {
+    margin-bottom: 20px;
+}
+
+.slogan{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+.form-container{
+    padding: 3rem 16rem 0rem 5rem;
+}
+.form-control{
+    padding: 0.8rem 0.75rem;
+    outline: 1px solid chocolate
+}
+.form-control:focus {
+    /* background-color: rgba(255, 255, 255, 0.15); */
+    outline: 2px solid chocolate !important; 
+}
+.form-label::after{
+    content: "*";
+    color: red;
+}
+.form-check-input:checked {
+    background-color: chocolate;
+    border-color: #552322;
+}
+.forget-pass{
+    float: right;
+    color: chocolate;
+}
+.login-btn{
+    width: 100%;
+    background-color: #CC7841;
+    padding: 15px;
+    outline: 0px;
+    border: 0px;
+    margin-top: 2.5rem;
+    font-weight: 600;
+    --bs-btn-hover-bg: chocolate;
+    color: white
+}
+.login-btn:hover{
+    color: #ffffff;
+}
+
+.styled-p {
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.styled-p:before,
+.styled-p:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.styled-p:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.styled-p:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+.btn-google{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    --bs-border-radius: 4px;
+    padding: 15px;
+    background-image: url(./images/google.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 80px;
+}
+.btn-google:hover{
+    background-color: #552322;
+    outline: 1px solid chocolate;
+    color: white;
+}
+.no-acc{
+    display: flex;
+    justify-content: center;
+}
+.register-here{
+    color: chocolate;
+    margin-left: 8px;
+}
+.error {
+    color: chocolate;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+@media screen and (min-width:576px) and (max-width:1400px)  {
+    .form-container{
+        padding: 1rem 1rem;
+    }
+    .btn-google{
+        background-position: 45px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:760px) {
+    .img-container{
+        display: none;
+    }
+    .form-container{
+        padding: 2rem 3rem;
+    }
+}
+@media screen and (max-width:576px)  {
+    .img-container{
+        display: none;
+    }
+    .form-container{
+        padding: 10px;
+    }
+    .btn-google{
+        background-position: 50px;
+    }
+    .custom-container{
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width:375px){
+    .custom-row{
+        --bs-gutter-y: 0.5rem !important;
+    }
+    .g-3{
+        --bs-gutter-y: 0.5rem !important;
+    }
+}
